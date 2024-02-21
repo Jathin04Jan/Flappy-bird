@@ -185,6 +185,7 @@ def main(genomes, config):
     nets = []
     ge = []
     birds = []
+    ticking_speed = 25
 
     for _, g in genomes:
         net = neat.nn.FeedForwardNetwork.create(g, config)
@@ -202,7 +203,7 @@ def main(genomes, config):
 
     run = True
     while run:
-        clock.tick(30)
+        clock.tick(ticking_speed)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -247,6 +248,7 @@ def main(genomes, config):
 
         if add_pipe:
             score += 1
+            ticking_speed += 0.5
             for g in ge:
                 g.fitness += 5
             pipes.append(Pipe(600))
