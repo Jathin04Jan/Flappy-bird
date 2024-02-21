@@ -10,7 +10,7 @@ In this project, the NEAT algorithm is used to train the AI to play the game of 
 
 1. Make sure you have Python installed on your system.
 2. Clone this repository to your local machine.
-3. Install the required dependencies by running `pip3 install pygame` and 'pip3 install neat-python'.
+3. Install the required dependencies by running `pip3 install pygame` and `pip3 install neat-python`.
 4. Run the script `flappy_bird.py` by executing `python flappy_bird.py`.
 
 ## Game Controls
